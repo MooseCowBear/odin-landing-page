@@ -168,9 +168,6 @@ button {
         flex-direction: column;
         gap: 0.3em;
     }
-    .links {
-        justify-content: space-between;
-    }
     a {
         font-size: 0.8em;
     }
