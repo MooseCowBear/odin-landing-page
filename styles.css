@@ -164,6 +164,16 @@ button {
     header, .welcome {
         padding: 1em;
     }
+    header {
+        flex-direction: column;
+        gap: 0.3em;
+    }
+    .links {
+        justify-content: space-between;
+    }
+    a {
+        font-size: 0.8em;
+    }
     .info-images {
         flex-direction: column;
         gap: 0.2em;
