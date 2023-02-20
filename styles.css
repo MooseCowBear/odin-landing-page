@@ -158,3 +158,30 @@ button {
     color: var(--dark-text);
     font-weight: 600;
 }
+
+/* so it won't look terrible on mobile... */
+@media only screen and (max-width: 600px) {
+    header, .welcome {
+        padding: 1em;
+    }
+    .info-images {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .sign-up-copy {
+        padding: 1em;
+        gap: 0.4em;
+    }
+    h2, span {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    button {
+        font-size: 0.8em;
+    }
+}
