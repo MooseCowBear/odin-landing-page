@@ -1,0 +1,159 @@
+:root {
+    --dark-background: #1f2937;
+    --light-background: #e5e7eb;
+    --light-text: #f9faf8;
+    --dark-text: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column; /* might move this to "main" if make static header and footer*/
+}
+
+header, footer {
+    background-color: var(--dark-background);
+    display: flex;
+    color: var(--light-text);
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+header {
+    justify-content: space-between;
+    padding: 1em 4em;
+}
+
+.links {
+    display: flex;
+    gap: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.right img {
+    width: 26em;
+    height: 26em;
+}
+
+img.info {
+    width: 16em;
+    height: 16em;
+    border-radius: 14px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    padding: 1em 4em;
+    gap: 1em;
+}
+
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+span {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+#info, .info-images {
+    display: flex;
+}
+
+#info {
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-images {
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.95;   
+}
+
+#action {
+    position: relative;
+    margin-bottom: -0.3em;
+}
+
+figure {
+    text-align: center;
+    padding: 4em;
+    background-color: var(--light-background);
+}
+
+#info p {
+    margin-bottom: 1em;
+}
+
+.sign-up-copy {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    padding: 2em;
+    color: var(--light-text);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+button {
+    border: none;
+    background-color: var(--light-text);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--dark-text);
+    font-weight: 600;
+}
